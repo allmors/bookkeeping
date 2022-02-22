@@ -1,0 +1,53 @@
+<!--
+ * @Author: Escher1108
+ * @Website: https://jkgblog.com
+ * @Date: 2022-02-21 21:53:44
+ * @LastEditTime: 2022-02-21 21:53:44
+ * @LastEditors: Do not edit
+ * @FilePath: \11800\test.html
+ * @Description: 耶斯莫拉
+-->
+<!DOCTYPE html>
+<html lang=zh-CN>
+
+<head>
+    <link rel="manifest" href="./H5/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="NSOA">
+    <meta name="apple-mobile-web-app-title" content="NSOA">
+    <meta name="msapplication-starturl" content="https://bkp.jkgblog.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <title>NSOA</title>
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="NSOA">
+    <meta name="apple-mobile-web-app-title" content="NSOA">
+    <meta name="msapplication-starturl" content="https://bkp.jkgblog.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script>
+        if ('serviceWorker' in navigator) {       // 判断浏览器支不支持 service worker
+            // 注册 service worker，sw.js 就是 service worker 的应用程序逻辑代码
+            navigator.serviceWorker.register('sw.js')
+                // 注册好后，会返回一个 promise，数据是 woker 上下文运行环境对象
+                .then(resitration => {
+                    console.log("register", resitration);
+                }).catch(err => console.error(err));
+        }
+    </script>
+    <script>var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS.supports('top: constant(a)'))
+        document.write('<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' + (coverSupport ? ', viewport-fit=cover' : '') + '" />')</script>
+    <link rel=stylesheet href=/H5/static/index.a5c69d49.css>
+</head>
+
+<body><noscript><strong>Please enable JavaScript to continue.</strong></noscript>
+    <div id=app></div>
+    <script src=/H5/static/js/chunk-vendors.aa67b445.js></script>
+    <script src=/H5/static/js/index.625ce6ad.js></script>
+</body>
+
+</html>
